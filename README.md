@@ -112,3 +112,16 @@ Raise an error and stop the program if x is lower than 0:
 
     if x < 0:
         raise Exception("Sorry, no numbers below zero")
+
+The raise keyword is used to raise an exception.
+
+You can define what kind of error to raise, and the text to pring to the user. 
+
+Example
+
+Raise a TypeError if x is not an integer:
+
+    x = "hello"
+
+    if no type(x) is int:
+        raise TypeError("Only integers are allowed")
