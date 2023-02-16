@@ -20,3 +20,31 @@ The try block will generate an exception, because x is not defined:
         print(x)
     except:
         print("An exception occured")    
+
+Since the try block raises an error, the except block will be executed.
+
+Without the try block, the program will crash and raise an erro:
+
+Example:
+
+This statement will raise an error, because x is not defined:
+
+    #This will raise an exception, because x is not defined:
+
+    print(x)
+
+# Many Exceptions
+You can define as many exception blocks as you want, e.g. if you want to execute a special block of code for a special kind of error:
+
+Example:
+
+Print one message if the try block raises a NameError and another for other errors:
+
+    #The try block will generate a NameError, because x is not defined:
+
+    try:
+        print(x)
+    except NameError:
+        print("Varaible x is not defined")
+    except:
+        print("Something else went wrong")    
