@@ -48,3 +48,19 @@ Print one message if the try block raises a NameError and another for other erro
         print("Varaible x is not defined")
     except:
         print("Something else went wrong")    
+
+# Else
+You can use the else keyword to define a block of code to be executed if no errors were raised:
+
+Example:
+
+In this example, the try block does not generate any error:
+
+    #The try block does not raise any errors, so the else block is executed:
+
+    try:
+        print("Hello")
+    except:
+        print("Something went wrong")    
+    else:
+        print("Nothing went wrong")    
