@@ -98,4 +98,17 @@ Try to open and write to a file that is not writable:
             print("Something went wrong when opening the file")        
 
 The program can continue, without leaving the file object open.
-            
+
+# Raise an exception 
+As a Python develper you can choose to thrwo an exception if a condition occurs.
+
+To throw (or raise) an exeception, use the raise keyword.
+
+Example 
+
+Raise an error and stop the program if x is lower than 0:
+
+    x = -1
+
+    if x < 0:
+        raise Exception("Sorry, no numbers below zero")
